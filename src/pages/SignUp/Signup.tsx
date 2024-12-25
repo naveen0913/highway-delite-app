@@ -82,18 +82,23 @@ function SignUp() {
             Sign up
           </button>
         </form>
-
+        <div className='bottom-container' >
         <div className="divider">or</div>
 
-        <button className="google-button">Continue with Google</button>
+<button className="google-button">Continue with Google</button>
 
-        <p className="signin-text">
-          Already have an account? <a href="#">Sign in</a>
-        </p>
+<p className="signin-text">
+  Already have an account? <a href="#">Sign in</a>
+</p>
+        </div>
+
+        
       </div>
+
       <div className="image-container">
-        <img src="/assets/bg-image.png" alt="Background" />
+        <img src="/assets/bg-image.png" alt="Background" className='logo-img' />
       </div>
+
     </div>
   );
 }
