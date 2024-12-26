@@ -1,0 +1,144 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.signout-button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signout-button:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.home-container {
+    max-width: 800px;
+}
+
+.welcome-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.create-note-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-note-button:hover {
+    background-color: #0056b3;
+}
+
+.notes-container {
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+
+}
+
+.notes-container h3 {
+    margin-bottom: 10px;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    color: #b02a37;
+}
+
+.input-group label {
+    display: block;
+    margin: 15px 0 10px 0;
+    font-weight: bold;
+}
+
+.input-group textarea {
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-title {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+
+    }
+
+    .signout-button {
+        font-size: 14px;
+    }
+
+    .create-note-button {
+        font-size: 14px;
+    }
+
+
+    .content {
+        padding: 0 20px 0 20px;
+
+    }
+
+    .welcome-card {
+        padding: 15px;
+    }
+
+    .note-item {
+        font-size: 14px;
+    }
+
+
+    .input-group textarea {
+        max-width: 330px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+}
