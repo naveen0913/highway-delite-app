@@ -117,6 +117,8 @@ function SignUp() {
 
     if (result && result.code === "200") {
       localStorage.setItem("authToken", result.token);
+      localStorage.setItem("user", JSON.stringify(result.data));
+
       alert(result.message);
       navigate("/home");
     } else {
